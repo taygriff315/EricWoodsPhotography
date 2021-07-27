@@ -69,6 +69,16 @@ namespace EricWoodsPhotography.UI.MVC.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
 
+        [Required(ErrorMessage ="You must enter a first name")]
+        [StringLength(50,ErrorMessage ="The field cannont contain more than 50 characters")]
+        [Display(Name ="Fist Name")]
+        public string FirstName { get; set; }
+
+        [Required(ErrorMessage = "You must enter a last name")]
+        [StringLength(50, ErrorMessage = "The field cannont contain more than 50 characters")]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]

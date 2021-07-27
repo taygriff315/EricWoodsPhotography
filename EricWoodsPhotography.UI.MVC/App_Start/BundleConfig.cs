@@ -25,6 +25,15 @@ namespace EricWoodsPhotography.UI.MVC
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/Content/assets/vendor").Include(
+                "~/Content/assets/vendor/aos/aos.js",
+                "~/Content/assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
+                "~/Content/assets/vendor/glightbox/js/glightbox.min.js",
+                "~/Content/assets/vendor/isotope-layout/isotope.pkgd.min.js",
+                "~/ Content/assets/vendor/php-email-form/validate.js",
+                "~/Content/assets/vendor/swiper/swiper-bundle.min.js",
+                "~/Content/assets/js/main.js"));
         }
     }
 }
