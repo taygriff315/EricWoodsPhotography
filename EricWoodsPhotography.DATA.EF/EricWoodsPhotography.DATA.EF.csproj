@@ -62,7 +62,6 @@
     <Compile Include="AspNetUserLogin.cs">
       <DependentUpon>Photography.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Family.cs">
       <DependentUpon>Photography.tt</DependentUpon>
     </Compile>
@@ -84,6 +83,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Photography.edmx</DependentUpon>
     </Compile>
+    <Compile Include="PhotographyMetaData\PhotographyMetaData.cs" />
     <Compile Include="Picture.cs">
       <DependentUpon>Photography.tt</DependentUpon>
     </Compile>

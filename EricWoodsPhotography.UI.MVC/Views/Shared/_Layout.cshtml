@@ -58,7 +58,8 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    
+                    @Html.ActionLink("Home","Index","Home")
 
                     <li class="dropdown">
                         <a href="#"><span>Gallery</span> <i class="bi bi-chevron-down"></i></a>
@@ -83,7 +84,7 @@
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-            <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Your Photo Album</a>
+            <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">My Photo Album</a>
 
 
         </div>
@@ -180,8 +181,10 @@
 
     <!-- Template Main JS File -->
     <script src="~/Content/assets/js/main.js"></script>
-    @Scripts.Render("~/Content/assets/vendor")
+
+    
     @RenderSection("Scripts", required: false)
+  
 </body>
 
 </html>
